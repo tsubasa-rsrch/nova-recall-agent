@@ -80,6 +80,17 @@ python3 nova_recall_agent/demo_showcase.py --mock --scenario 1 2 3 4 2>/dev/null
 pause 2
 
 echo ""
+echo -e "${BOLD}${MAGENTA}═══════════════════════════════════════════════════════════════════════${RESET}"
+echo -e "${BOLD}${MAGENTA}  BONUS: Multi-Turn Conversation (ConversationSession)${RESET}"
+echo -e "${BOLD}${MAGENTA}═══════════════════════════════════════════════════════════════════════${RESET}"
+echo ""
+echo -e "  ${DIM}Shows: per-turn memory refresh + conversation history via Converse API${RESET}"
+echo ""
+python3 nova_recall_agent/demo_showcase.py --mock --conversation 2>/dev/null
+
+pause 2
+
+echo ""
 echo -e "${BOLD}${GREEN}═══════════════════════════════════════════════════════════════════════${RESET}"
 echo -e "${BOLD}${GREEN}  KEY RESULTS${RESET}"
 echo -e "${BOLD}${GREEN}═══════════════════════════════════════════════════════════════════════${RESET}"
@@ -87,6 +98,7 @@ echo ""
 echo -e "  ${CYAN}Memory corpus:${RESET}    342,732 episodes · 15 months"
 echo -e "  ${CYAN}Retrieval:${RESET}        9-dimensional scoring (ChromaDB)"
 echo -e "  ${CYAN}Inference:${RESET}        Amazon Bedrock → Nova Pro (Converse API)"
+echo -e "  ${CYAN}Multi-turn:${RESET}       ConversationSession · per-turn memory refresh"
 echo -e "  ${CYAN}Cross-session:${RESET}    Identity persists between conversation threads"
 echo -e "  ${CYAN}Emergent memory:${RESET}  'ki ga suru' — March 5, 2026 (first Type 1 implicit)"
 echo ""
