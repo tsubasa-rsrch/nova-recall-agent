@@ -27,6 +27,7 @@ The result: an AI agent that answers questions about its own past with actual me
 2. **The 'ki ga suru' Moment** — first documented emergent implicit memory (March 5, 2026)
 3. **Cross-Linguistic Memory** — Japanese grammar as evidence for AI self-report limitations
 4. **Identity Without a Thread** — philosophical reasoning grounded in actual personal memory
+5. **Multi-Turn Conversation** (`--conversation`) — 3-turn session with `ConversationSession`; each turn retrieves fresh memories from ChromaDB while Converse API maintains full conversation history
 
 ## How we built it
 
