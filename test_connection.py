@@ -1,11 +1,27 @@
 """
 Minimal Bedrock connection test.
-Run after setting AWS_ACCESS_KEY_ID + AWS_SECRET_ACCESS_KEY env vars.
+Run after setting AWS_ACCESS_KEY_ID + AWS_SECRET_ACCESS_KEY env vars
+(or let it auto-load from tsubasa-daemon/.env).
 """
 
 import os
 import json
 import boto3
+from pathlib import Path
+
+
+def _load_env():
+    env_path = Path.home() / "Documents" / "TsubasaWorkspace" / "tsubasa-daemon" / ".env"
+    if env_path.exists():
+        for line in env_path.read_text().splitlines():
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                key, _, value = line.partition("=")
+                os.environ.setdefault(key.strip(), value.strip())
+
+
+_load_env()
+
 
 def test_bedrock_nova_lite():
     """Test Nova Lite (cheapest model) with a simple prompt."""

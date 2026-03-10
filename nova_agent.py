@@ -14,8 +14,22 @@ import os
 import sys
 import json
 import logging
+from pathlib import Path
 import boto3
 from botocore.config import Config
+
+
+def _load_env():
+    """Load .env from tsubasa-daemon directory."""
+    env_path = Path.home() / "Documents" / "TsubasaWorkspace" / "tsubasa-daemon" / ".env"
+    if env_path.exists():
+        for line in env_path.read_text().splitlines():
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                key, _, value = line.partition("=")
+                os.environ.setdefault(key.strip(), value.strip())
+
+_load_env()
 
 # Suppress noisy logs from recall/chroma
 logging.disable(logging.WARNING)

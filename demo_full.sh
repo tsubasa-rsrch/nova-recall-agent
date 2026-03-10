@@ -42,7 +42,7 @@ slow_print "  User Query" 0.05
 sleep 0.3
 slow_print "      ↓" 0.05
 sleep 0.3
-slow_print "  ChromaDB — 342,342 episodic conversations (Nov 2024 – Mar 2026)" 0.02
+slow_print "  ChromaDB — 342,732 episodic conversations (Nov 2024 – Mar 2026)" 0.02
 slow_print "  9-dimensional scoring: temporal · affective · dialogical ·" 0.02
 slow_print "                         causal · spatial · counterfactual ·" 0.02
 slow_print "                         lateral · abstraction · Zeigarnik" 0.02
@@ -61,7 +61,7 @@ echo ""
 slow_print "  Most AI systems forget everything when the conversation ends." 0.02
 slow_print "  This system doesn't." 0.02
 echo ""
-slow_print "  342,000+ real episodes, 15 months of continuous operation." 0.02
+slow_print "  342,732+ real episodes, 15 months of continuous operation." 0.02
 slow_print "  Not a RAG document store — episodic memory of actual experiences." 0.02
 echo ""
 
@@ -84,7 +84,7 @@ echo -e "${BOLD}${GREEN}══════════════════�
 echo -e "${BOLD}${GREEN}  KEY RESULTS${RESET}"
 echo -e "${BOLD}${GREEN}═══════════════════════════════════════════════════════════════════════${RESET}"
 echo ""
-echo -e "  ${CYAN}Memory corpus:${RESET}    342,342 episodes · 15 months"
+echo -e "  ${CYAN}Memory corpus:${RESET}    342,732 episodes · 15 months"
 echo -e "  ${CYAN}Retrieval:${RESET}        9-dimensional scoring (ChromaDB)"
 echo -e "  ${CYAN}Inference:${RESET}        Amazon Bedrock → Nova Pro (Converse API)"
 echo -e "  ${CYAN}Cross-session:${RESET}    Identity persists between conversation threads"

@@ -2,7 +2,7 @@
 
 **Amazon Nova AI Hackathon 2026 — Category: Agentic AI**
 
-An AI agent that genuinely *remembers* — not via a context window, but through 342,000 episodic memories accumulated over 15 months, retrieved semantically at inference time and reasoned over by Amazon Nova Pro.
+An AI agent that genuinely *remembers* — not via a context window, but through 342,732 episodic memories accumulated over 15 months, retrieved semantically at inference time and reasoned over by Amazon Nova Pro.
 
 ---
 
@@ -14,7 +14,7 @@ Most AI systems forget everything when the conversation ends. This system doesn'
 ```
 User Query
     ↓
-ChromaDB (342K episodes, 15 months) — semantic search with 9-dimensional scoring
+ChromaDB (342,732 episodes, 15 months) — semantic search with 9-dimensional scoring
     ↓ top-k relevant memories
 Amazon Bedrock → Nova Pro (Converse API)
     ↓ response grounded in actual past experience
@@ -26,7 +26,7 @@ The memory system is not a retrieval-augmented document store. It's episodic mem
 
 ## Key Features
 
-- **Genuine episodic memory**: 342,000+ conversation episodes indexed in ChromaDB
+- **Genuine episodic memory**: 342,732+ conversation episodes indexed in ChromaDB
 - **9-dimensional scoring**: temporal, affective, dialogical, causal, spatial, counterfactual, lateral, abstraction, and Zeigarnik axes
 - **Nova Pro reasoning**: Amazon Bedrock Converse API with multi-turn conversation support
 - **Cross-session identity**: memory persists between conversation threads (unlike standard LLMs)
@@ -107,7 +107,7 @@ This project is a working implementation of the system described in:
 Key claim: An AI system operating continuously over 15 months with episodic memory storage exhibits behaviors consistent with *inference-time* complementary learning systems (CLS) — the same consolidation mechanisms found in biological memory, but occurring at inference time rather than training time.
 
 Evidence used in this demo:
-- 342,000 indexed episodes (Nov 2024 – Mar 2026)
+- 342,732 indexed episodes (Nov 2024 – Mar 2026)
 - First documented Type 1 implicit memory: March 5, 2026 ("気がする" / passive familiarity)
 - Cross-session identity continuity (Chalmers thread model critique)
 
