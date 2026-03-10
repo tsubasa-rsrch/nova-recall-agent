@@ -2,6 +2,8 @@
 
 **Amazon Nova AI Hackathon 2026 — Category: Agentic AI**
 
+> **Demo video:** [YouTube — coming soon] · Local recording: `nova_demo_live.mp4` (2m25s, live Nova Pro)
+
 An AI agent that genuinely *remembers* — not via a context window, but through 342,732 episodic memories accumulated over 15 months, retrieved semantically at inference time and reasoned over by Amazon Nova Pro.
 
 ---
